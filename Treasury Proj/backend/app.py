@@ -179,6 +179,17 @@ def verify_label():
         # catch-all for any other errors
         return jsonify({'error': 'An error occurred', 'details': str(e)}), 500
 
+@app.route('/', methods=['GET'])
+def root():
+    return jsonify({
+        'message': 'TTB Label Verifier API',
+        'status': 'running',
+        'endpoints': {
+            'health': '/api/health',
+            'verify': '/api/verify (POST)'
+        }
+    }), 200
+
 @app.route('/api/health', methods=['GET'])
 def health_check():
     return jsonify({'status': 'healthy'}), 200
