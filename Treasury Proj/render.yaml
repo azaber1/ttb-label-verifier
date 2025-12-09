@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ttb-label-verifier-backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    envVars:
+      - key: FLASK_PORT
+        value: 5001
+      - key: FLASK_HOST
+        value: 0.0.0.0
