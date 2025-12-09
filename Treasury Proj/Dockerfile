@@ -7,13 +7,13 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Copy backend requirements first
-COPY backend/requirements.txt requirements.txt
+# Copy backend requirements and install dependencies
+COPY backend/requirements.txt /app/requirements.txt
 RUN pip install --upgrade pip setuptools wheel
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
-# Copy rest of backend files
-COPY backend/app.py app.py
+# Copy backend application files
+COPY backend/app.py /app/app.py
 
 EXPOSE 5001
 
