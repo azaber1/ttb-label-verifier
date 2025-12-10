@@ -115,6 +115,8 @@
   background: #f8f9fa;
   padding: 30px;
   border-radius: 8px;
+  border: 2px solid #ddd;
+  min-height: 500px;
 }
 
 .preview-section h2 {
