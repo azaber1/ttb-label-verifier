@@ -98,6 +98,7 @@ function App() {
         </header>
 
         <div className="main-content">
+          {/* Form Section */}
           <div className="form-section">
             <form onSubmit={handleSubmit} className="verification-form">
               <div className="form-group">
@@ -191,7 +192,8 @@ function App() {
             </form>
           </div>
 
-          <div className="preview-section">
+          {/* Preview Section - Always Visible */}
+          <div className="preview-section" data-testid="preview-section">
             <h2>Label Preview</h2>
             <div className="preview-image">
               {imagePreview ? (
