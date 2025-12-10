@@ -22,7 +22,6 @@ cd backend
 pip install -r requirements.txt
 python3 app.py
 ```
-Runs on `http://localhost:5001`
 
 **Frontend:**
 ```bash
