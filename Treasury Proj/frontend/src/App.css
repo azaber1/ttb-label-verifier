@@ -129,6 +129,10 @@
   padding: 15px;
   background: white;
   text-align: center;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .preview-image img {
@@ -136,6 +140,17 @@
   max-height: 400px;
   border-radius: 4px;
   object-fit: contain;
+}
+
+.preview-placeholder {
+  color: #999;
+  font-style: italic;
+  padding: 40px;
+}
+
+.preview-placeholder p {
+  margin: 0;
+  font-size: 1rem;
 }
 
 .form-actions {

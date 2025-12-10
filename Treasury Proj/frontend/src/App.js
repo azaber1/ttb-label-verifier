@@ -191,14 +191,18 @@ function App() {
             </form>
           </div>
 
-          {imagePreview && (
-            <div className="preview-section">
-              <h2>Label Preview</h2>
-              <div className="preview-image">
+          <div className="preview-section">
+            <h2>Label Preview</h2>
+            <div className="preview-image">
+              {imagePreview ? (
                 <img src={imagePreview} alt="Label" />
-              </div>
+              ) : (
+                <div className="preview-placeholder">
+                  <p>Upload a label image to see preview</p>
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
 
         {error && (
