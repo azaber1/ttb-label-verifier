@@ -128,7 +128,6 @@ There's a `sample_label.png` in the project root. Try it with:
 
 ## What I'd Improve
 
-If I had more time:
 - Better error handling and more specific error messages
 - Database to store verification history
 - Batch processing for multiple labels
